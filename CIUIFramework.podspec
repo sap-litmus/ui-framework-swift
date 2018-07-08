@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "CIUIFramework"
   s.version      = "0.0.1"
-  s.summary      = "UI framework inspired from Cascade Style Sheets for iOS. Written entirely in Swift."
+  s.summary      = "UI framework inspired from Cascade Style Sheets for iOS."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+                   UI framework inspired from Cascade Style Sheets for iOS. Written entirely in Swift.
                    DESC
 
   s.homepage     = "https://github.com/sap-litmus/ui-framework-swift"
@@ -63,11 +64,11 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
+  s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
+   s.ios.deployment_target = "9.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -116,7 +117,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+  s.frameworks  = "UIKit", "Foundation"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
@@ -133,5 +134,7 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+
+s.swift_version = '4.0'
 
 end
